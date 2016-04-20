@@ -1,0 +1,64 @@
+body {
+	background: #eef
+}
+
+.page {
+	position: absolute;
+	width: 90vw;
+	height: 90vh;
+	padding: 5vh 5vw;
+}
+
+/*animate*/  
+.slide-left.ng-enter,  
+.slide-right.ng-enter {  
+    position: absolute;  
+    transition: 0.5s ease-in-out;  
+}
+ 
+.slide-left.ng-leave,    
+.slide-right.ng-leave {  
+    position: absolute;  
+    transition: 0.25s ease-in-out;  
+} 
+
+.slide-left.ng-enter {  
+    z-index: 101;  
+    transform: translateX(100%);  
+}  
+
+.slide-left.ng-enter.ng-enter-active {  
+    transform: translateX(0);  
+} 
+
+.slide-left.ng-leave {  
+    z-index: 100;  
+    opacity: 1;
+}
+
+.slide-left.ng-leave.ng-leave-active {  
+    opacity: 0; 
+    transition: all 0.5s ease-in-out;  
+}
+
+.slide-right.ng-enter {  
+    z-index: 101;    
+    transform: translateX(-100%);  
+}
+
+.slide-right.ng-enter.ng-enter-active {  ;  
+    transform: translateX(0);  
+}
+
+.slide-right.ng-leave {  
+    z-index: 100;  
+    opacity: 1;
+}
+
+.slide-right.ng-leave.ng-leave-active { 
+	opacity: 0; 
+    transition: all 0.5s ease-in-out;  
+}  
+
+
+
